@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          height: 100vh;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+.animation{
+    height: 400px;
+  width:400px;
+  border-radius: 50%;
+}
+.animation img{
+    width: 100%;
+  animation-name: animate;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes animate{
+  0%{
+border-radius:85% 15% 87% 13% / 13% 83% 17% 87% ;
+  }
+  25%{
+border-radius: 55% 45% 61% 39% / 29% 51% 49% 71% ;
+  }
+   50%{
+border-radius: 26% 74% 37% 63% / 79% 26% 74% 21%  ;
+  }
+   75%{
+border-radius: 1% 99% 2% 98% / 99% 12% 88% 1%  ;
+  } 
+  100%{
+border-radius: 85% 15% 87% 13% / 13% 83% 17% 87% ;  ;
+  }
+}
+    </style>
+</head>
+<body>
+<div class="animation">
+    <img src="spider.jpg" alt="Spiderman">
+</div>
+</body>
+</html>
