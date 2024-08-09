@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+.container{
+    height: 400px;
+    width: 500px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.zoom-in-out-box {
+  width: 50px;
+  height: 50px;
+  background: #f50057;
+  animation: zoom-in-zoom-out 3s ease-out infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(2, 2.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class="zoom-in-out-box">
+  zoom-in-out-box
+</div>    
+</div>
+</body>
+</html>
