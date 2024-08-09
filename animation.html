@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            border: 2px solid black;
+            padding: 10px ;
+            background-color: gray;
+            height: 250px;
+            width: 300px;
+        }
+        .child{
+            height: 50px;
+            width: 50px;
+            background-color: purple;
+            color: white;
+            padding: 10px;
+            /* animation-name: animate1; */
+            position: relative;
+            animation-name: animate2;
+            animation-duration: 5s;
+            animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes animate{
+            from{background-color: red;
+            }
+            to{background-color: green;
+                width: 200px;
+            }
+        }
+         @keyframes animate2{
+            0%{ top: 0;left:0;
+            }
+            25%{top: 0;left:200px;
+            }
+            50%{top: 150px;left:200px;
+            }
+            57%{top: 150px;left:0;
+            }
+            100%{top: 0;left:0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            Moving Box
+        </div>
+    </div>
+</body>
+</html>
