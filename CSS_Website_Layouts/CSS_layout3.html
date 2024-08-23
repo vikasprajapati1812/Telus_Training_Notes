@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout3</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: auto;
+   
+}
+header{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(122, 201, 122);
+    text-align: center;
+    padding: 20px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px;
+
+}
+.Article{
+    flex: 20%;
+    height: 500px;
+    background-color: rgb(197, 241, 241);
+    text-align: center;
+}
+.aside{
+    flex: 60%;
+    height: 400px;
+    background-color: rgb(121, 157, 223);
+    text-align: center;
+}
+.nav{
+    flex: 15%;
+    height: 500px;
+    background-color: #f1a1fc;
+    text-align: center;
+}
+footer{
+    height: 250px;
+    width: 100%;
+    background-color: rgb(245, 199, 199);
+    text-align: center;
+    padding: 20px;
+
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Website Header</h1>
+
+    </header>
+    <div class="main">
+        <div class="Article">
+            <p>Article</p>
+        </div>
+        <div class="aside">
+            <p>Aside</p>
+        </div>
+        <div class="nav">
+            <p>Navigation
+            </p>
+        </div>
+    </div>
+    <footer>
+        <h1>My Website Footer</h1>
+    </footer>
+</body>
+
+</html>

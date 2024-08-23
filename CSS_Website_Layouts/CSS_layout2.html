@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+        }
+
+        header {
+            padding: 20px 30px;
+            background-color: rgb(115, 121, 126);
+            text-align: center;
+
+        }
+        header p{
+            text-align: left;
+            padding: 20px 5px;
+        }
+
+        .nav {
+            display: block;
+            background-color: #013016;
+            margin: 15px 0px;
+            text-align: center;
+        }
+
+        .nav li {
+            display: inline-block;
+            padding: 10px 25px;
+            list-style-type: none;
+            /* background-color: red; */
+        }
+
+        .nav>ul>li>a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: red;
+            font-size: 1.1rem;
+        }
+
+        .nav>ul>li:hover {
+            background-color: rgb(93, 158, 137);
+
+        }
+
+        .nav>ul>li:hover a {
+            text-transform: uppercase;
+
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            padding: 15px 15px;
+            gap: 10px;
+
+        }
+
+        @media screen and (max-width: 500px) {
+            .main {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .main-left {
+            flex: 10%;
+            background-color: #6C22A6;
+            padding: 15px 15px;
+
+
+        }
+
+        .main-mid {
+            flex: 40%;
+            background-color: #6962AD;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 15px 15px;
+
+
+        }
+
+        .imgg {
+            width: 500px;
+            height: 300px;
+            background-color: rgb(131, 126, 120);
+            text-align: center;
+            margin: 300px;
+
+        }
+
+        .rimg {
+            height: 50px;
+            width: 100px;
+            background-color: #31bd70;
+            margin: 25px;
+        }
+
+        .limg {
+            height: 100px;
+            width: 200px;
+            background-color: #43bd7a;
+            margin: 25px;
+        }
+
+        .main-right {
+            flex: 10%;
+            background-color: #83C0C1;
+            padding: 15px 15px;
+
+
+
+        }
+
+        footer {
+            padding: 20px 30px;
+            background-color: rgb(115, 121, 126);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My websites layout2</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quia nam quidem quasi quam non. Sed at
+            corrupti deleniti praesentium distinctio nesciunt, error consequatur ad vitae, soluta impedit eaque
+            voluptatibus porro accusamus. Nemo dolores molestiae, eveniet ab sint unde. Praesentium nesciunt et
+            quibusdam optio laboriosam culpa obcaecati eveniet ducimus perferendis.</p>
+    </header>
+    <div class="nav">
+        <ul>
+            <li><a href="##">Home</a></li>
+            <li><a href="##">Tutorials</a></li>
+            <li><a href="##">Exercise</a></li>
+            <li><a href="##">Services</a></li>
+            <li><a href="##">Help</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="main-left">
+            <h2>Left portion of the main</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corrupti veritatis possimus excepturi enim
+                sed eos assumenda commodi. Rem sapiente enim hic soluta expedita magni provident autem delectus illum
+                reprehenderit? Aliquam necessitatibus optio labore aspernatur, repellendus totam amet dicta repudiandae
+                maiores magni eum officiis rem similique? Eius perferendis et voluptate.</p>
+            <div class="limg">Image 1</div>
+            <div class="limg">Image 2</div>
+            <div class="limg">Image 3</div>
+            <div class="limg">Image 4</div>
+            <div class="limg">Image 5</div>
+
+        </div>
+        <div class="main-mid">
+            <h2>Mid portion of the main</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corrupti veritatis possimus excepturi enim
+                sed eos assumenda commodi. Rem sapiente enim hic soluta expedita magni provident autem delectus illum
+                reprehenderit? Aliquam necessitatibus optio labore aspernatur, repellendus totam amet dicta repudiandae
+                maiores magni eum officiis rem similique? Eius perferendis et voluptate.</p>
+            <div class="imgg">BIG IMAGe</div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, facere nesciunt quo, delectus sequi
+                dolor temporibus error doloribus eveniet ipsam quibusdam earum quae dicta unde excepturi consequuntur
+                illo, ipsa inventore modi? Ex distinctio minima labore assumenda ad itaque fugit, totam dicta dolorem?
+                Error temporibus, quaerat dignissimos soluta rerum a consectetur praesentium excepturi impedit nobis
+                architecto ut exercitationem blanditiis, deleniti cupiditate sit, nostrum optio? Omnis minus sapiente
+                saepe quaerat sequi exercitationem culpa dolorum suscipit magnam earum iusto quia, accusamus cumque est
+                similique cum doloremque pariatur velit veritatis labore minima? Ipsam fugiat tempora fugit temporibus
+                dolores voluptas officiis commodi porro nesciunt rerum?</p>
+        </div>
+        <div class="main-right">
+            <h2>Right portion of the main</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa corrupti veritatis possimus excepturi enim
+                sed eos assumenda commodi. Rem sapiente enim hic soluta expedita magni provident autem delectus illum
+                reprehenderit? Aliquam necessitatibus optio labore aspernatur, repellendus totam amet dicta repudiandae
+                maiores magni eum officiis rem similique? Eius perferendis et voluptate.</p>
+            <div class="rimg">Image 1</div>
+            <div class="rimg">Image 2</div>
+            <div class="rimg">Image 3</div>
+            <div class="rimg">Image 4</div>
+            <div class="rimg">Image 5</div>
+            <div class="rimg">Image 6</div>
+        </div>
+
+    </div>
+    <footer>
+        <h1>Footer</h1>
+        <p>This is the footer of my Website</p>
+    </footer>
+</body>
+
+</html>

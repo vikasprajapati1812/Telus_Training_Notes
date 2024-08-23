@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            text-align: center;
+            padding: 25px;
+        }
+        .navbar>ul{
+            background-color: black;
+        }
+        .navbar>ul li{
+            display:inline-block;
+            list-style-type: none;
+            position: relative;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            color: azure;
+            padding: 5px 25px;
+            background-color: brown;
+            
+           
+        }
+        .dropdown{
+            display: none;
+            position: absolute;
+            
+
+        }
+        .dropdown a{
+            display: block;
+        }
+        .navbar>ul>li:hover .dropdown{
+            display: block;
+        
+        }
+        .navbar>ul>li>a:hover{
+            background-color: grey;
+            color: aqua;
+        }
+        .dropdown>li>a:hover{
+            background-color: rgb(124, 101, 145);
+            color: rgb(9, 212, 19);
+        }
+
+        .main{
+            display: flex;
+        }
+        .left
+    {
+        display: flex;
+        flex: 75%;
+        flex-direction: column;
+        text-align: center;
+        background-color: #f1f1f1;
+        padding: 25px;
+    }
+    .right
+    {
+        flex: 25%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+        background-color: #f1f1f1;
+    }
+    .shadow{
+        box-shadow: 5px 10px 2px 2px #f1f1f1,5px 10px 2px 2px #f1f1f1,5px 10px 2px 2px #f1f1f1,5px 10px 2px 2px #f1f1f1 ;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1>My First Website layout</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil dicta Lorem ipsum dolor sit
+                amet consectetur, adipisicing elit. Iure, velit, labore consectetur quae tenetur adipisci voluptates at
+                tempora expedita nam eos sit in!</optio>
+            </p>
+        </div>
+    </header>
+    <div class="navbar">
+        <ul>
+            <li><a href="##">Home </a></li>
+            <li><a href="##">File</a></li>
+            <li><a href="##">Edit</a></li>
+            <li><a href="##">Courses</a>
+            <ul class="dropdown">
+                <li><a href="##">Frontend</a></li>
+                <li><a href="##">Fullstack</a></li>
+                <li><a href="##">AI</a></li>
+                <li><a href="##">Machine Learning</a></li>
+
+            </ul></li>
+            <li><a href="##">Service</a></li>
+            <li><a href="##">Contacts</a></li>
+            <li><a href="##">Help</a></li>
+        </ul>
+
+    </div>
+
+
+
+
+
+
+    <div class="main">
+        <div class="left">
+            <div class="left-top shadow">
+                <h2>My title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti explicabo, quidem ullam dolor illum voluptates.</p>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+            <div class="left-bottom shadow">
+                <h2>My title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti explicabo, quidem ullam dolor illum voluptates.</p>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right-top shadow">
+                <h2>My title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti explicabo, quidem ullam dolor illum voluptates.</p>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+            <div class="right-mid shadow"> <h2>My title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti explicabo, quidem ullam dolor illum voluptates.</p>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p></div>
+            <div class="right-bottom shadow"> <h2>My title</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti explicabo, quidem ullam dolor illum voluptates.</p>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p></div>
+            <div class="right-bottom-card shadow">
+                <h3>No material left</h3>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .whole {
+            height: 100vh;
+            width: 100vw;
+            background-color: antiquewhite;
+
+        }
+
+        .navbar {
+            background-color: rgb(146, 140, 140);
+        }
+
+        .navbar li {
+            display: block;
+            padding: 10px 25px;
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .navbar li a {
+            display: block;
+            text-decoration: none;
+            color: rgb(92, 0, 172);
+            font-size: 18px;
+        }
+
+        .navbar li:hover {
+            background-color: aqua;
+
+
+        }
+
+        .top {
+            height: 20%;
+            background-color: green;
+            margin: 10px;
+            text-align: center;
+            padding: 25px;
+        }
+
+        .footer {
+            height:20% ;
+            background-color: green;
+            text-align: center;
+            padding: 25px;
+            margin: 10px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            margin-right: 10px;
+
+        }
+
+        .article {
+            flex: 40%;
+            height: 500px;
+            background-color: rgb(146, 180, 214);
+            margin: 10px;
+            text-align: center;
+            padding: 25px;
+        }
+        
+        .aside {
+            flex: 60%;
+            height: 500px;
+            padding: 25px;
+            background-color: rgb(102, 114, 126);
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="whole">
+        <div class="navbar">
+            <ul>
+                <li><a href="##">Home</a></li>
+                <li><a href="##">Learn</a></li>
+                <li><a href="##">Engage</a></li>
+                <li><a href="##">Contribute</a></li>
+                <li><a href="##">Help</a></li>
+            </ul>
+        </div>
+        <div class="top">
+            <h1>Header of the Page</h1>
+        </div>
+        <div class="bot">
+            <div class="main">
+                <div class="article">
+                    <h2>Article</h2> </div>
+                <div class="aside"> 
+                    <h2>Aside</h2>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <h2>Website Footer</h2>
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
