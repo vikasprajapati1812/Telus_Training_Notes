@@ -6,7 +6,7 @@ React helps us to breakdown the Applcation in small units that can be called as 
 Features of React JS Library
 The Some of the Features of the React JS are given below :-
 1. Uses Virtual Dom- REact  is based on the Virtual Dom concepts as it allow to make changes in Actual Dom fast as Compare to previous Manipulation .
-(Basically It uses the Concept of "diffing" in which the Latest Virtual Dome is Firstly compare with the Old version of Virtual Dom and then the Changes that appear between them are then used to make changes in the actual  Dom.) The whole process of Manipultion in the actual dom is known as "Conciliation".
+(Basically It uses the Concept of "diffing" in which the Latest Virtual Dome is Firstly compare with the Old version of Virtual Dom and then the Changes that appear between them are then used to make changes in the actual  Dom.) The whole process of Manipultion in the actual dom is known as "Re-conciliation".
 And bcz of the virtual Dom the Manipulation is Faster thats why the React is Faster as compare to previous manipulation in the DOM.
 2. Components- Since the application is breakdown in parts so many components are created .
 That also make the particular Components reusable and can be used n no. of times in the same Project.
